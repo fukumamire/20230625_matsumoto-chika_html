@@ -73,17 +73,19 @@
 
             <!--フォームの作成　個人情報送信のため　post  -->
 
-            <form action="送信先" method="post">
 
-                <!-- 問い合わせ項目の作成  <p>段落を使って縦に表示させる　-->
-                <p><label>会社名<input type="text" /> </label></p>
-                <p><label>お名前<input type="text" /></label></p>
-                <p><label>メールアドレス<input type="email" /></label></p>
+            <form action="送信先" method="post"><br>
+
+                <!-- 問い合わせ項目の作成  ×〇改行タグ<br>　-->
+                <label>会社名<input type="text" /> </label><br>
+                <label>お名前<input type="text" /></label><br>
+                <label>メールアドレス<input type="email" /></label><br>
 
                 <!-- 問合せ内容なので記入欄　行を複数を１つの記入欄する -->
-                <p><label>お問い合わせ内容<textarea name="お問い合わせ内容" cols="30" rows="10"></textarea></label></p>
+                <label>お問い合わせ内容<textarea name="お問い合わせ内容" cols="30" rows="10"></textarea></label><br>
                 <!--<input type="部品の種類" name="部品の名前" value="初期値 / 送信されるデータ / ボタンのラベル">  -->
-                <p><input type="submit" value="お申込み" />
+                <input type="submit" value="お申込み" />
+
             </form>
         </section>
     </main>
