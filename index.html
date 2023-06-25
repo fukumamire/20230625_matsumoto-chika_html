@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>株式会社TECH </title>
+</head>
+<header>
+    <!-- 見出しのh1は一度の使用可 -->
+    <h1>株式会社TECH</h1>
+    <!--企業サイトの見出し　クリックすると関連するlinkに飛ぶ（ナビゲート）-->
+    <nav>
+        <ul>
+            <!--各リストをクリックする別のページ時に飛ぶように　aタグ -->
+            <li><a href="">ホーム</a></li>
+            <li><a href="">企業情報</a></li>
+            <li><a href="">会社概要</a></li>
+            <li><a href="">よくある質問</a></li>
+            <li><a href="">お問い合わせ</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <!-- メインタグ -->
+    <main role="main">
+        <!--画像  -->
+        <img src="img/mv.png" alt="coachtech">
+
+        <p>最新のテクノロジーで社会問題を解決</p>
+        <!-- 会社概要　という章をつくる -->
+        <section>
+            <!-- sectionには必ず見出し＜ｈ２～６＞ -->
+            <h2>会社概要</h2>
+
+            <table>
+                <tr><!-- 行 -->
+                    <td>会社名</td>
+                    <td>株式会社TECH</td>
+                </tr>
+
+                <tr><!-- 行 -->
+                    <td>代表者</td>
+                    <td>山田太郎</td>
+                </tr>
+
+                <tr><!-- 行 -->
+                    <td>所在地</td>
+                    <td>東京都渋谷区神宮前</td>
+                </tr>
+
+                <tr><!-- 行 -->
+                    <td>設立</td>
+                    <td>2019/07/17</td>
+                </tr>
+
+                <tr><!-- 行 -->
+                    <td>従業員数</td>
+                    <td>100人</td>
+                </tr>
+
+                <tr><!-- 行 -->
+                    <td>資本金</td>
+                    <td>1000万円</td>
+                </tr>
+
+            </table>
+        </section>
+
+        <section>
+            <h2>お問い合わせ</h2>
+
+            <!--フォームの作成　個人情報送信のため　post  -->
+
+            <form action="送信先" method="post">
+
+                <!-- 問い合わせ項目の作成  <p>段落を使って縦に表示させる　-->
+                <p><label>会社名<input type="text" /> </label></p>
+                <p><label>お名前<input type="text" /></label></p>
+                <p><label>メールアドレス<input type="email" /></label></p>
+
+                <!-- 問合せ内容なので記入欄　行を複数を１つの記入欄する -->
+                <p><label>お問い合わせ内容<textarea name="お問い合わせ内容" cols="30" rows="10"></textarea></label></p>
+                <!--<input type="部品の種類" name="部品の名前" value="初期値 / 送信されるデータ / ボタンのラベル">  -->
+                <p><input type="submit" value="お申込み" />
+            </form>
+        </section>
+    </main>
+
+    <!-- フッダー　今回は著作権のみ -->
+    <footer>
+        <small>&copy; 2020 TECH inc</small>
+    </footer>
+
+</body>
+
+</html>
